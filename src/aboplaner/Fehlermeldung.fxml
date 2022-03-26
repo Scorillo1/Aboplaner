@@ -5,14 +5,13 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="aboplaner.FehlermeldungController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aboplaner.FehlermeldungController">
    <children>
       <JFXTextArea fx:id="Fm_Textarea" editable="false" layoutX="51.0" layoutY="34.0" text="Fehlermedlung lol">
          <padding>
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
          </padding>
       </JFXTextArea>
-      <JFXButton layoutX="220.0" layoutY="269.0" prefHeight="49.0" prefWidth="114.0" text="Schließen" />
+      <JFXButton fx:id="button_schließen" layoutX="220.0" layoutY="269.0" prefHeight="49.0" prefWidth="114.0" text="Schließen" />
    </children>
 </AnchorPane>
