@@ -12,6 +12,8 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
@@ -21,9 +23,9 @@ import javafx.fxml.Initializable;
 public class FehlermeldungController implements Initializable {
 
     @FXML
-    private JFXTextArea Fm_Textarea;
+    private TextArea Fm_Textarea;
     @FXML
-    private JFXButton button_schließen;
+    private Button button_schließen;
 
     /**
      * Initializes the controller class.
@@ -33,9 +35,5 @@ public class FehlermeldungController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void clickButtonSchließen(ActionEvent event) {
-        Fm_Textarea.setText("hello");
-    }
     
 }
