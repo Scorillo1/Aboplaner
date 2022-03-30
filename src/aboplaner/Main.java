@@ -49,5 +49,7 @@ public class Main extends Application
     public static void main(String[] args)
     {
         launch(args);
+        Spielplan s = new Spielplan();
+        s.algorithmus();
     }
 }
