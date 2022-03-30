@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="aboplaner.NutzungsbedingungenController">
-    
+<AnchorPane id="AnchorPane" prefHeight="399.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aboplaner.NutzungsbedingungenController">
+   <children>
+      <CheckBox fx:id="cb_zugestimmt" layoutX="14.0" layoutY="292.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="31.0" selected="true" />
+      <TextArea editable="false" layoutX="14.0" layoutY="14.0" prefHeight="258.0" prefWidth="376.0" text="lol" />
+      <Text layoutX="50.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ich habe die oben stehenden Nutzungsbedingungen gelesen und stimme ihnen zu." wrappingWidth="340.53672790527344" />
+      <Button fx:id="btn_abbruch" layoutX="64.0" layoutY="359.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" text="Abbruch" />
+      <Button fx:id="btn_weiter" layoutX="232.0" layoutY="359.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" text="weiter" />
+   </children>
 </AnchorPane>
