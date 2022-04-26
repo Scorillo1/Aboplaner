@@ -17,37 +17,37 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="618.0" layoutX="58.0" layoutY="158.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="630.0" />
       <Group layoutX="168.0" layoutY="82.0" nodeOrientation="LEFT_TO_RIGHT">
          <children>
-            <RadioButton fx:id="rB_Montag" layoutX="-27.0" layoutY="92.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="278.0" text="Montag">
+            <RadioButton fx:id="rB_Montag" layoutX="-27.0" layoutY="92.0" mnemonicParsing="false" onAction="#check_montag" prefHeight="65.0" prefWidth="278.0" text="Montag">
                <font>
                   <Font size="27.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="-28.0" layoutY="149.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="221.0" text="Dienstag">
+            <RadioButton fx:id="rb_dienstag" layoutX="-28.0" layoutY="149.0" mnemonicParsing="false" onAction="#check_dienstag" prefHeight="55.0" prefWidth="221.0" text="Dienstag">
                <font>
                   <Font size="27.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="-28.0" layoutY="200.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="221.0" text="Mittwoch">
+            <RadioButton fx:id="rb_mittwoch" layoutX="-28.0" layoutY="200.0" mnemonicParsing="false" onAction="#check_mittwoch" prefHeight="55.0" prefWidth="221.0" text="Mittwoch">
                <font>
                   <Font size="27.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="-28.0" layoutY="245.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="221.0" text="Donnerstag">
+            <RadioButton fx:id="rb_donnerstag" layoutX="-28.0" layoutY="245.0" mnemonicParsing="false" onAction="#check_donnerstag" prefHeight="68.0" prefWidth="221.0" text="Donnerstag">
                <font>
                   <Font size="27.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="-28.0" layoutY="303.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="221.0" selected="true" text="Freitag">
+            <RadioButton fx:id="rb_freitag" layoutX="-28.0" layoutY="303.0" mnemonicParsing="false" onAction="#check_freitag" prefHeight="55.0" prefWidth="221.0" selected="true" text="Freitag">
                <font>
                   <Font size="27.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="-28.0" layoutY="355.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="221.0" text="Samstag">
+            <RadioButton fx:id="rb_samtag" layoutX="-28.0" layoutY="355.0" mnemonicParsing="false" onAction="#check_samstag" prefHeight="55.0" prefWidth="221.0" text="Samstag">
                <font>
                   <Font size="27.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="-28.0" layoutY="407.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="181.0" text="Sonntag">
+            <RadioButton fx:id="rb_sonntag" layoutX="-28.0" layoutY="407.0" mnemonicParsing="false" onAction="#check_sonntag" prefHeight="55.0" prefWidth="181.0" text="Sonntag">
                <font>
                   <Font size="27.0" />
                </font>
@@ -67,53 +67,59 @@
          </children></Group>
       <Group layoutX="862.0" layoutY="636.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="413.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1011.0" />
-            <Button fx:id="btn_hinzufuegen2" layoutX="117.0" layoutY="339.0" mnemonicParsing="false" onAction="#btnHinzufuegen" prefHeight="57.0" prefWidth="304.0" text="hinzufügen">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="429.0" layoutX="-4.0" layoutY="-83.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1011.0" />
+            <Button fx:id="btn_hinzufuegen_date" layoutX="117.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnHinzufuegenDate" prefHeight="57.0" prefWidth="304.0" text="hinzufügen">
                <font>
                   <Font size="27.0" />
                </font>
             </Button>
-            <Button fx:id="btn_hinzufuegen21" layoutX="561.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnHinzufuegen" prefHeight="57.0" prefWidth="346.0" text="Eintrag löschen">
+            <Button fx:id="btn_löschen_date" layoutX="561.0" layoutY="251.0" mnemonicParsing="false" onAction="#btnloeschenDate" prefHeight="57.0" prefWidth="346.0" text="Eintrag löschen">
                <font>
                   <Font size="27.0" />
                </font>
             </Button>
-            <ListView layoutX="78.0" layoutY="60.0" prefHeight="257.0" prefWidth="875.0" />
-         </children>
-      </Group>
-      <Group layoutX="1117.0" layoutY="206.0">
-         <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="560.0" layoutX="-255.0" layoutY="-164.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1014.0" />
-            <Button fx:id="btn_hinzufuegen" layoutX="-160.0" layoutY="106.0" mnemonicParsing="false" onAction="#btnHinzufuegen" text="hinzufügen">
-               <font>
-                  <Font size="27.0" />
-               </font>
-            </Button>
-            <Button fx:id="btn_loeschen" layoutX="80.0" layoutY="105.0" mnemonicParsing="false" onAction="#btnLoeschen" text="löschen">
-               <font>
-                  <Font size="27.0" />
-               </font>
-            </Button>
-            <ChoiceBox fx:id="cb_spielweise" cache="true" layoutX="-79.0" layoutY="227.0" prefHeight="54.0" prefWidth="214.0" />
-            <TextField fx:id="tf_name" layoutX="-134.0" layoutY="-10.0" promptText="Name eingeben">
+            <ListView fx:id="list_date" layoutX="68.0" layoutY="29.0" prefHeight="208.0" prefWidth="875.0" />
+            <TextField fx:id="tf_date" layoutX="97.0" layoutY="-41.0" prefHeight="51.0" prefWidth="345.0">
                <font>
                   <Font size="27.0" />
                </font>
             </TextField>
-            <ListView fx:id="list_players" layoutX="242.0" layoutY="-108.0" prefHeight="474.0" prefWidth="493.0" />
+            <DatePicker fx:id="dp_date" layoutX="517.0" layoutY="-43.0" prefHeight="57.0" prefWidth="434.0" />
          </children>
       </Group>
-      <Button fx:id="btn_hinzufuegen1" layoutX="76.0" layoutY="888.0" mnemonicParsing="false" onAction="#btnHinzufuegen" text="Beenden">
+      <Group layoutX="1117.0" layoutY="206.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="515.0" layoutX="-260.0" layoutY="-192.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1014.0" />
+            <Button fx:id="btn_hinzufuegen" layoutX="-160.0" layoutY="42.0" mnemonicParsing="false" onAction="#btnHinzufuegen" text="hinzufügen">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_loeschen" layoutX="80.0" layoutY="42.0" mnemonicParsing="false" onAction="#btnLoeschen" text="löschen">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="cb_spielweise" cache="true" layoutX="-79.0" layoutY="178.0" prefHeight="54.0" prefWidth="214.0" />
+            <TextField fx:id="tf_name" layoutX="-134.0" layoutY="-71.0" promptText="Name eingeben">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </TextField>
+            <ListView fx:id="list_players" layoutX="242.0" layoutY="-151.0" prefHeight="424.0" prefWidth="493.0" />
+         </children>
+      </Group>
+      <Button fx:id="btn_hinzufuegen1" layoutX="76.0" layoutY="888.0" mnemonicParsing="false" onAction="#btnEndOfEverything" text="Beenden">
          <font>
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="btn_hinzufuegen11" layoutX="270.0" layoutY="889.0" mnemonicParsing="false" onAction="#btnHinzufuegen" text="Spielplan erstellen">
+      <Button fx:id="btn_Spielplan" layoutX="270.0" layoutY="889.0" mnemonicParsing="false" onAction="#btnErstellung" text="Spielplan erstellen">
          <font>
             <Font size="27.0" />
          </font>
       </Button>
-      <Button fx:id="btn_hinzufuegen111" layoutX="575.0" layoutY="887.0" mnemonicParsing="false" onAction="#btnHinzufuegen" text="Auswahl speichern">
+      <Button fx:id="btn_speichern" layoutX="575.0" layoutY="887.0" mnemonicParsing="false" onAction="#btnSpeichern" text="Auswahl speichern">
          <font>
             <Font size="27.0" />
          </font>

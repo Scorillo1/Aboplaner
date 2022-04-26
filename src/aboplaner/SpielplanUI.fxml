@@ -4,10 +4,9 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="aboplaner.SpielplanUIController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aboplaner.SpielplanUIController">
    <children>
-      <TableView fx:id="tv_statistik" layoutX="64.0" layoutY="72.0" prefHeight="809.0" prefWidth="960.0">
+      <TableView fx:id="tv_statistik" layoutX="64.0" layoutY="72.0" prefHeight="810.0" prefWidth="847.0">
         <columns>
           <TableColumn fx:id="tcName_statistik" prefWidth="150.39995574951172" text="C1" />
           <TableColumn fx:id="tcFt_statistik" minWidth="0.0" prefWidth="145.5999755859375" text="C2" />

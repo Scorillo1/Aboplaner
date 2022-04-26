@@ -28,7 +28,9 @@ public class Main extends Application
         if(d.equals("true")){
             Parent root = FXMLLoader.load(getClass().getResource("Auswahl.fxml"));
              stage.setTitle("Auswahl");
-             stage.setMaximized(true);
+            
+             stage.setHeight(1000);
+             
         
                 Scene scene = new Scene(root);
         
