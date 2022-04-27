@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import static javafx.application.Platform.exit;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -75,6 +76,7 @@ public class AuswahlController implements Initializable {
     private RadioButton rb_freitag;
     
     private ArrayList<RadioButton> rlist = new ArrayList();
+    private ObservableList list;
     private String rb_checked; //beinhaltet text des ausgewählten Radiobuttons
     
 
@@ -91,14 +93,23 @@ public class AuswahlController implements Initializable {
        rlist.add(rb_freitag);
        rlist.add(rb_samtag);
        rlist.add(rb_sonntag);
+       
+       cb_spielweise.getItems().add("Einzel");
+       cb_spielweise.getItems().add("Doppel");
+       cb_spielweise.setValue("Bitte Spielweise auswählen");
     }    
 
     @FXML
     private void btnHinzufuegen(ActionEvent event) {
+        if(tf_name.getText()!=null){
+            list_players.getItems().add(tf_name.getText());
+        }
     }
 
     @FXML
     private void btnLoeschen(ActionEvent event) {
+        final int selectedID = list_players.getSelectionModel().getSelectedIndex();
+        list_players.getItems().remove(selectedID);
     }
 
     @FXML
