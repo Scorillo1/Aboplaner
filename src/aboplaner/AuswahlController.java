@@ -77,6 +77,7 @@ public class AuswahlController implements Initializable {
     
     private ArrayList<RadioButton> rlist = new ArrayList();
     private ObservableList list;
+    private ObservableList listd;
     private String rb_checked; //beinhaltet text des ausgewählten Radiobuttons
     
 
@@ -114,6 +115,7 @@ public class AuswahlController implements Initializable {
 
     @FXML
     private void btnHinzufuegenDate(ActionEvent event) {
+        
     }
 
     @FXML
