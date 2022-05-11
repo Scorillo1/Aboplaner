@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aboplaner.LoadingController">
+<AnchorPane id="AnchorPane" prefHeight="253.0" prefWidth="393.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aboplaner.LoadingController">
     <stylesheets>
-        <URL value="@loading.css"/>
+        <URL value="@loading.css" />
     </stylesheets>
+   <children>
+      <ImageView fitHeight="208.0" fitWidth="313.0" layoutX="90.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Other_Sources/cartoon-snail-loading-loading-gif-animation_2734139.png!bw340.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_abbruch" layoutX="310.0" layoutY="202.0" mnemonicParsing="false" onAction="#abbruch" text="Abbruch" />
+   </children>
 </AnchorPane>

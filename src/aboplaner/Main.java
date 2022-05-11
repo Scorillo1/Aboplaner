@@ -18,14 +18,12 @@ public class Main extends Application
     @Override
     public void start(Stage stage) throws Exception
     {
-//        URL location = getClass().getResource("Fehlermeldung.fxml");
-//            FXMLLoader fxmlLoader = new FXMLLoader(location);
-//            fxmlLoader.setClassLoader(getClass().getClassLoader());
-//            Parent root = fxmlLoader.load();
+//     
         InputStream p = new FileInputStream("NutzungsbedingungenVorhanden.txt");
         BufferedReader br = new BufferedReader( new InputStreamReader(p));
         String d = br.readLine();
-        if(d.equals("true")){
+       if(d!=null){
+            if(d.equals("true")){
             Parent root = FXMLLoader.load(getClass().getResource("Auswahl.fxml"));
              stage.setTitle("Auswahl");
             
@@ -37,7 +35,7 @@ public class Main extends Application
             stage.setScene(scene);
             stage.show();
         }
-        else
+            else
         {
             Parent root = FXMLLoader.load(getClass().getResource("Nutzungsbedingungen.fxml"));
             stage.setTitle("Nutzungsbedingungen");
@@ -45,6 +43,8 @@ public class Main extends Application
             stage.setScene(scene);
             stage.show();
         }
+       }
+        
         
     }
     
