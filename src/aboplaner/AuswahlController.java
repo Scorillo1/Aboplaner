@@ -139,6 +139,7 @@ public class AuswahlController implements Initializable {
         Parent root = FXMLLoader.load(getClass().getResource("Loading.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(root);
+        stage.setScene(scene);
         stage.show();
         stage.setResizable(false);
         stage.setTitle("Loading...");
